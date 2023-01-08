@@ -24,15 +24,18 @@ function guardar(){
     sta.push(inputValue4)
     carg.push(inputValue5)
 
-    console.log(name, ap, titulo, sta, carg)
-    console.log(JSON.stringify(name + ap + titulo + sta + carg))
+    console.log(name, ap, tit, sta, carg)
+    console.log(JSON.stringify(name + ap + tit + sta + carg))
 
-    localStorage.setItem('nombre' + 'apellido' + 'titulo' + 'status' + 'carg', JSON.stringify(name + ap + tit + sta + carg))
+    localStorage.setItem('nombre' + 'apellido' + 'titulo' + 'status' + 'carg0', JSON.stringify(name + ap + tit + sta + carg))
     document.getElementById('nametxt').value = ''
     document.getElementById('aptxt').value = ''
     document.getElementById('tit').value = ''
     document.getElementById('sta').value = ''
     document.getElementById('carg').value = ''
-   
+    render()
 }
 
+function render(){
+
+}
